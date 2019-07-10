@@ -1,0 +1,125 @@
+Installation Guide 
+
+1. Get ZED SDK (Latest version)  https://www.stereolabs.com/developers/release/#sdkdownloads_anchor
+# Download ZED SDK for Ubuntu 16 (v2.8.2) ---- Use with CUDA9 #
+############################# or ##############################
+# Download ZED SDK for Ubuntu 18 (v2.8.2) ---- Use with CUDA10 #
+
+2. In my case i used CUDA9 on Ubuntu 16.04 LTS
+Get CUDA 9 from here --> https://developer.nvidia.com/cuda-90-download-archive
+# Choose your targer platform , download it and use this command on your command line # 
+- sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb 
+- sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub 
+- sudo apt-get update 
+- sudo apt-get install cuda
+
+3.Continue launch the.run file of ZED SDK from a terminal 
+- chmod +x ZED_SDK_Linux_*.run
+- ./ZED_SDK_Linux_*.run
+
+##################################################################################################
+
+Test the ZED Camera - The ZED Program is located in the following folders --> /usr/local/zed/tools
+
+1. ZED Diagnostic 
+- Reconfirm that your ZED Camera is ready for use 
+
+2. ZED Explorer
+- Adjust resolution and framerate and camera properties
+- Recording the video in type of .svo file
+- Play back the video in speicific directory 
+- Capture a picture in type of .png file
+
+3. ZED Depth Viewer
+- Adjust resolution and framerate of camera
+- RGB Camera, Depth Camera and Pointcloud Viewer
+- Showing the distance between camera and specfic position which click on depth viewer
+
+4. ZED fu 
+- Create a spatial map in type of Mesh or Pointcloud 
+- From the SVO file or Live mode 
+
+5. ZED Calibration
+- Recalibrate the ZED Camera 
+- Recommended to follow the tutorial
+
+6. ZED SVOEditor 
+- Edit the SVO file 
+- Read the instruction in command line when you run this program 
+
+##################################################################################################
+
+Play ZED with C++ 
+
+C++ Development
+
+Installing OpenCV on Linux
+Some sample can require OpenCV, here is a tutorial on how to install it.
+https://www.stereolabs.com/docs/getting-started/application-development/
+
+Setting up projet - Download the ZED Examples sample code available on GitHub page  
+- git clone https://github.com/stereolabs/zed-examples.git
+Building on Linux
+- Use this website --> https://www.stereolabs.com/docs/getting-started/application-development/
+
+1. Camera Control - This sample shows how to adjust the ZED camera parameters.
+2. Camera Streaming - This sample shows how to stream and receive on local network the ZED's video feed.
+3. Depth Sensing - This sample shows how to capture a 3D point cloud and display with OpenGL.
+Example command --> ./ZED_Depth_Sensing ~/$(Path)/$(File name).svo
+4. Cuda Refocus - This sample demonstrates how to grab and process images/depth on a CUDA kernel for a depth-based focusing application.  
+5. Plane Detection - This sample shows how to retrieves the floor plane from the scene and the plane at a specific image coordinate
+6. Position Tracking - This sample shows how to track camera motion in space and display it 
+7. Spatial Mapping - This sample shows how to capture a real-time 3D map of the scene
+8. SVO Recording 
+Export - How to read a SVO file and convert it into an AVI file and image file
+Play Back - This sample demonstrates how to read a SVO video file
+Recording - This sample shows how to record video in Stereolabs SVO format
+
+#################################################################################################
+
+Play ZED with Python
+
+Python Development
+
+Installation and Building the Python API from Source
+https://www.stereolabs.com/docs/getting-started/python-development/
+
+Using the Python API with this github
+git clone https://github.com/stereolabs/zed-python-api
+
+#################################################################################################
+
+Play ZED with ROS
+ 
+Download ros kinetic from here --> http://wiki.ros.org/kinetic/Installation/Ubuntu
+How to create a workspace and package --> http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+Try Example Ros node --> https://www.stereolabs.com/docs/ros/
+ 
+#################################################################################################
+ 
+Play ZED with Open CV
+https://www.stereolabs.com/docs/opencv-python/
+
+#################################################################################################
+
+Play ZED with Matlab
+https://www.stereolabs.com/docs/matlab/
+
+#################################################################################################
+
+Play ZED with TensorFlow
+https://www.stereolabs.com/docs/tensorflow/
+
+#################################################################################################
+
+Play ZED with Unity 
+https://www.stereolabs.com/docs/unity/
+
+#################################################################################################
+
+Play ZED with Unreal
+https://www.stereolabs.com/docs/unreal/
+
+#################################################################################################
+
+

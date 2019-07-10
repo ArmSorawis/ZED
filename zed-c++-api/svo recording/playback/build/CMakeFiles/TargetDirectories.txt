@@ -1,0 +1,3 @@
+/home/csorawit/ZED_ws/src/svo recording/playback/build/CMakeFiles/edit_cache.dir
+/home/csorawit/ZED_ws/src/svo recording/playback/build/CMakeFiles/rebuild_cache.dir
+/home/csorawit/ZED_ws/src/svo recording/playback/build/CMakeFiles/ZED_SVO_Playback.dir

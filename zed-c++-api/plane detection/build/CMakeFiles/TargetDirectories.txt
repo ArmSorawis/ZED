@@ -1,0 +1,3 @@
+/home/csorawit/ZED_ws/src/plane detection/build/CMakeFiles/rebuild_cache.dir
+/home/csorawit/ZED_ws/src/plane detection/build/CMakeFiles/edit_cache.dir
+/home/csorawit/ZED_ws/src/plane detection/build/CMakeFiles/ZED_Plane_Detection.dir
